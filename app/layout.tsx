@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Playfair_Display, Dancing_Script, Great_Vibes, Pacifico } from "next/font/google";
+import Header from "@/components/Header";
 import "./globals.css";
 
 const geist = Geist({
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${playfair.variable} ${dancingScript.variable} ${greatVibes.variable} ${pacifico.variable}`}>
       <body className="font-geist antialiased">
+        <Header />
         {children}
       </body>
     </html>

@@ -191,22 +191,35 @@ export default function OrderPage({ params }: OrderPageProps) {
                   </label>
                 </div>
 
-                {/* Address Below */}
-                <div className="space-y-3">
-                  <p className="text-2xl font-bold text-gray-900">
-                    YB Normal
-                  </p>
-                  <p className="text-base font-bold text-gray-900">
-                    12346 Woodside Ave, Suite I<br />
-                    Lakeside, CA 92040
-                  </p>
+                {/* Store Info with Logo */}
+                <div className="bg-white rounded-lg p-6 shadow-sm">
+                  <div className="flex items-center gap-3 mb-6">
+                    <Image
+                      src="/YB Normal Logo-black.PNG"
+                      alt="YB Normal"
+                      width={200}
+                      height={200}
+                      className="object-contain flex-shrink-0"
+                    />
+                    <div>
+                      <p className="text-xl font-bold text-gray-900 mb-2">
+                        YB Normal
+                      </p>
+                      <p className="text-base text-gray-700">
+                        12346 Woodside Ave, Suite I<br />
+                        Lakeside, CA 92040
+                      </p>
+                    </div>
+                  </div>
                   
-                  <div className="text-sm text-gray-700 mt-4">
-                    <p className="font-medium mb-1">Store Hours:</p>
-                    <p>Monday – Thursday: 10:00 am – 7:00 pm</p>
-                    <p>Friday: 10:00 am – 6:00 pm</p>
-                    <p>Saturday: Closed</p>
-                    <p>Sunday: 11:00 am – 6:00 pm</p>
+                  <div className="border-t border-gray-200 pt-4">
+                    <p className="text-sm font-semibold text-gray-900 mb-2">Store Hours:</p>
+                    <div className="text-sm text-gray-700 space-y-1">
+                      <p>Monday – Thursday: 10:00 am – 7:00 pm</p>
+                      <p>Friday: 10:00 am – 6:00 pm</p>
+                      <p>Saturday: Closed</p>
+                      <p>Sunday: 11:00 am – 6:00 pm</p>
+                    </div>
                   </div>
                 </div>
               </div>
